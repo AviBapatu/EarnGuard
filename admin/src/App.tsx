@@ -14,8 +14,12 @@ import { SignalDebug } from './pages/SignalDebug';
 import { SystemHealth } from './pages/SystemHealth';
 import { SimulationControls } from './pages/SimulationControls';
 
-const Guard = ({ children }: { children: JSX.Element }) => {
-  return localStorage.getItem('adminToken') ? children : <Navigate to="/login" replace />;
+const Guard = ({ children }: { children: React.ReactNode }) => {
+  return localStorage.getItem("adminToken") ? (
+    children
+  ) : (
+    <Navigate to="/login" replace />
+  );
 };
 
 function App() {
