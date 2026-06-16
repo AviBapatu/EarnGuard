@@ -127,7 +127,7 @@ Worker opens EarnGuard app
    ├── Zone-wise disruption detection pipeline scans all signals
    ├── Disruption risk % computed for each zone
    ├── If risk % > threshold → parametric trigger fires
-   └── Auto-claim initiated (zero worker action)
+   └── Auto-claim initiated here(zero worker action)
         │
         ▼
 4. CLAIM PROCESSING & FRAUD DETECTION
